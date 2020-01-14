@@ -1,2 +1,2 @@
 # westapp
-Mobile Apps Mockup with React Native 
+Mobile Apps Mockup WestBike with React Native 
