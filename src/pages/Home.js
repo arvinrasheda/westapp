@@ -19,11 +19,11 @@ export default class Home extends React.Component {
                     borderRadius: 8,
                     backgroundColor: 'white',
                     elevation: 8,
-                    width: '80%',
+                    width: '70%',
                     position: 'relative',
                     padding: 16,
-                    alignItems: 'flex-start',
-                    justifyContent: 'flex-start',
+                    alignItems: 'center',
+                    justifyContent: 'center',
                     flexDirection: 'column'
                 }}>
                     <View style={{
@@ -80,12 +80,44 @@ export default class Home extends React.Component {
                                         color: 'white',
                                         textAlign: 'left',
                                         width: '100%',
-                                    }}>         WestPay                              Rp.22.500 </Text>
+                                    }}>        WestPay                              Rp.22.500 </Text>
                                     <Icon raised name='plus' type='font-awesome' color='#2ECC71' size={10}/>
                                 </View>
                             </View>
                         </TouchableOpacity>
                     </View>
+                </View>
+                <View style={{
+                    borderRadius: 8,
+                    backgroundColor: 'white',
+                    elevation: 8,
+                    width: '70%',
+                    position: 'relative',
+                    padding: 16,
+                    flexDirection: "row",
+                    marginTop: 10
+                }}>
+                    <TouchableOpacity onPress={() => { this.props.navigation.navigate('New') }}>
+                        <View style={{
+                            borderRadius: 8,
+                            backgroundColor: 'white',
+                            elevation: 8,
+                            width: 66,
+                            height: 60,
+                            alignContent: 'center',
+                            alignItems: 'center'
+                        }}>
+                            <View style={{ marginTop: 10 }}>
+                                <Icon name='plus-square' type='font-awesome' color='#2ECC71' size={25}/>
+                            </View>
+                            <View style={{
+                                paddingBottom: 10
+                            }}>
+                                <Text>New Order</Text>
+                            </View>
+                        </View>
+                    </TouchableOpacity>
+
                 </View>
             </View>
         );

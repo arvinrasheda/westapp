@@ -9,6 +9,8 @@ import LoginScreen from '../screen/login';
 import Order from '../pages/Order';
 import Home from '../pages/Home';
 import Personal from '../pages/Personal';
+import NewOrder from '../pages/NewOrder';
+import DetailOrder from '../pages/DetailOrder';
 
 const HomeNavigator = createBottomTabNavigator(
     {
@@ -43,7 +45,9 @@ const HomeNavigator = createBottomTabNavigator(
 const MainContainer = createSwitchNavigator({
     SplashScreen: SplashScreen,
     LoginScreen: LoginScreen,
-    HomeNavigator: HomeNavigator
+    HomeNavigator: HomeNavigator,
+    New: NewOrder,
+    Detail: DetailOrder
 }, {
     initialRouteName: 'SplashScreen',
 });
