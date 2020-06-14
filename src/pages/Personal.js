@@ -30,7 +30,7 @@ export default class Personal extends React.Component {
                         justifyContent: 'center',
                     }}>
                         <Image
-                            source={require('../assets/images/profile.jpg')}
+                            source={require('../assets/images/user.png')}
                             style={{
                                 width: 66,
                                 height: 60,
@@ -49,19 +49,19 @@ export default class Personal extends React.Component {
                     <TextInput style={{
                         marginTop: 30,
                         width: '100%',
-                    }} placeholder="Nama Lengkap" underlineColorAndroid={'#2ECC71'} value={'Arvin Rasheda'} />
+                    }} placeholder="Nama Lengkap" underlineColorAndroid={'#2ECC71'} />
                     <TextInput style={{
                         marginTop: 10,
                         width: '100%',
-                    }} placeholder="NIM" underlineColorAndroid={'#2ECC71'} value={'17180093'} />
+                    }} placeholder="NIM" underlineColorAndroid={'#2ECC71'} />
                     <TextInput style={{
                         marginTop: 10,
                         width: '100%',
-                    }} placeholder="Username" underlineColorAndroid={'#2ECC71'} value={'arvinrasheda'} />
+                    }} placeholder="Username" underlineColorAndroid={'#2ECC71'}  />
                     <TextInput style={{
                         marginTop: 10,
                         width: '100%',
-                    }} placeholder="Nomor Handphone" underlineColorAndroid={'#2ECC71'} value={'0895355231492'} />
+                    }} placeholder="Nomor Handphone" underlineColorAndroid={'#2ECC71'}  />
                     <TouchableOpacity onPress={() => { this.props.navigation.navigate('Home') }}>
                         <View style={{
                             borderRadius: 8,

@@ -32,7 +32,7 @@ export default class Home extends React.Component {
                         justifyContent: 'center',
                     }}>
                         <Image
-                            source={require('../assets/images/profile.jpg')}
+                            source={require('../assets/images/user.png')}
                             style={{
                                 width: 66,
                                 height: 60,
@@ -46,12 +46,12 @@ export default class Home extends React.Component {
                                 color: '#2ECC71',
                                 fontWeight: 'bold',
                                 fontSize: 15
-                            }}>Arvin Rasheda</Text>
+                            }}>Nama User</Text>
                             <Text style={{
                                 marginLeft: 5,
                                 color: '#2ECC71',
                                 fontSize: 10
-                            }}>+62 8953 5523 1492</Text>
+                            }}>+62 8123 4567 8910</Text>
                         </View>
                         <TouchableOpacity onPress={() => { this.props.navigation.navigate('Personal') }}>
                             <Icon name='edit' type='font-awesome' color='#2ECC71' size={25}/>
@@ -117,7 +117,27 @@ export default class Home extends React.Component {
                             </View>
                         </View>
                     </TouchableOpacity>
-
+                    <TouchableOpacity onPress={() => { this.props.navigation.navigate('Kelompok') }}>
+                        <View style={{
+                            borderRadius: 8,
+                            marginLeft: 10,
+                            backgroundColor: 'white',
+                            elevation: 8,
+                            width: 66,
+                            height: 60,
+                            alignContent: 'center',
+                            alignItems: 'center'
+                        }}>
+                            <View style={{ marginTop: 10 }}>
+                                <Icon name='info' type='font-awesome' color='#2ECC71' size={25}/>
+                            </View>
+                            <View style={{
+                                paddingBottom: 10
+                            }}>
+                                <Text>Kelompok</Text>
+                            </View>
+                        </View>
+                    </TouchableOpacity>
                 </View>
             </View>
         );

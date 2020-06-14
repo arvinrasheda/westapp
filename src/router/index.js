@@ -11,6 +11,7 @@ import Home from '../pages/Home';
 import Personal from '../pages/Personal';
 import NewOrder from '../pages/NewOrder';
 import DetailOrder from '../pages/DetailOrder';
+import Kelompok from '../pages/Kelompok';
 
 const HomeNavigator = createBottomTabNavigator(
     {
@@ -47,6 +48,7 @@ const MainContainer = createSwitchNavigator({
     LoginScreen: LoginScreen,
     HomeNavigator: HomeNavigator,
     New: NewOrder,
+    Kelompok: Kelompok,
     Detail: DetailOrder
 }, {
     initialRouteName: 'SplashScreen',
